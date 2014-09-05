@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <project name="TheMuppets/proprietary_vendor_htc" path="vendor/htc" remote="github" revision="cm-11.0" />
+  <project name="TheMuppets/proprietary_vendor_samsung" path="vendor/samsung" remote="github" />
+  <project name="CyanogenMod/android_device_htc_jewel" path="device/htc/jewel" remote="github" revision="cm-11.0" />
+  <project name="CyanogenMod/android_device_qcom_common" path="device/qcom/common" remote="github" revision="cm-11.0" />
+  <project name="CyanogenMod/android_kernel_htc_msm8960" path="kernel/htc/msm8960" remote="github" revision="cm-11.0" />
+  <project name="CyanogenMod/android_device_htc_msm8960-common" path="device/htc/msm8960-common" remote="github" revision="cm-11.0" />
+  <project name="CyanogenMod/android_device_htc_s4-common" path="device/htc/s4-common" remote="github" revision="cm-11.0" />
+  <project name="CyanogenMod/android_device_htc_m7spr" path="device/htc/m7spr" remote="github" revision="cm-11.0" />
+  <project name="CyanogenMod/android_device_htc_m7-common" path="device/htc/m7-common" remote="github" revision="cm-11.0" />
+  <project name="CyanogenMod/android_device_samsung_qcom-common" path="device/samsung/qcom-common" remote="github"  revision="cm-11.0"/>
+  <project name="CyanogenMod/android_hardware_samsung" path="hardware/samsung" remote="github"  revision="cm-11.0"/>
+  <project name="CyanogenMod/android_device_samsung_msm8960-common" path="device/samsung/msm8960-common" remote="github" revision="cm-11.0" />
+  <project name="CyanogenMod/android_device_samsung_d2-common" path="device/samsung/d2-common" remote="github" revision="cm-11.0" />
+  <project name="CyanogenMod/android_device_samsung_d2spr" path="device/samsung/d2spr" remote="github" revision="cm-11.0" />
+  <project name="CyanogenMod/android_device_samsung_d2lte" path="device/samsung/d2lte" remote="github" revision="cm-11.0" />
+  <project name="CyanogenMod/android_device_samsung_omap4-common" path="device/samsung/omap4-common" remote="github"  revision="cm-11.0"/>
+  <project name="CyanogenMod/android_packages_apps_SamsungServiceMode" path="packages/apps/SamsungServiceMode" remote="github" revision="cm-11.0" />
+  <project name="CyanogenMod/android_hardware_samsung_slsi_openmax" path="hardware/samsung/slsi/openmax" remote="github"  revision="cm-11.0"/>
+  <project name="CyanogenMod/android_hardware_samsung_slsi_exynos5" path="hardware/samsung/slsi/exynos5" remote="github"  revision="cm-11.0"/>
+  <project name="CyanogenMod/android_hardware_samsung_slsi_exynos" path="hardware/samsung/slsi/exynos" remote="github"  revision="cm-11.0"/>
+  <project name="CyanogenMod/android_hardware_samsung_slsi_exynos5-insignal" path="hardware/samsung/slsi/exynos5-insignal" remote="github"  revision="cm-11.0"/>
+  <project name="CyanogenMod/android_hardware_samsung_slsi_exynos5410" path="hardware/samsung/slsi/exynos5410" remote="github"  revision="cm-11.0"/>
+  <project name="CyanogenMod/android_kernel_samsung_d2" path="kernel/samsung/d2" remote="github"  revision="cm-11.0" />
+  <project name="LiquidSmokeX64/android_prebuilts_gcc_linux-x86_arm_arm-eabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" remote="github"  revision="sm-kk-mr1" /> 
+  <project name="LiquidSmokeX64/android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" remote="github"  revision="sm-kk-mr1" />
+</manifest>
