@@ -19,7 +19,7 @@ sudo apt-get install git gnupg flex bison gperf build-essential zip curl libc6-d
 Insert my roomservice.xml
 
 Navigate to ~/android/system./repo with a file browser. (Ctrl+H is needed)
-Add a folder named “local_manifests”, and place my roomservice.xml in there.
+Place my local_manifests folder in there.
 
 Run initial sync
 
