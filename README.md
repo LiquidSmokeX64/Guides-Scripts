@@ -2,7 +2,7 @@ Read Me First
 ==============
 
 
-How to build Cyanogenmod 11 for any device. (Commits I only can confirm working on jewel & m7spr)
+How to build Cyanogenmod 11 for any device. (Conversion I only can confirm working on jewel & m7spr)
 
 You do not need to have the device to do it this way.
 
