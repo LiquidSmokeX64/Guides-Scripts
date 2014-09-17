@@ -8,7 +8,7 @@ You do not need to have the device to do it this way.
 
 FIRST RUN ONLY (everything up to dash marks)
 
-Install your Linux Distro ( Mint 17 for me, but I know how to setup just about any main distro fo building, Mint is just easiest & fastest.)
+Install your Linux Distro ( Mint 17 for me.)
 
 Setup Build Environment
 
