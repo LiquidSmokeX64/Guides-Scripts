@@ -36,7 +36,7 @@ cd ~/android/system/vendor/cm && ./get-prebuilts && cd ~/android/system && repo 
 
 Note: In some cases if you attempt to build for a device you do not have all dependencies set in roomservice.xml, it will notice this and attempt to download them automatically. 
 
-If you want to add my personal commits for GCC 4.8 and O3 to your build you will need the additional cherrypick commands before building but after RepoSync.
+If you want to add my personal commits for UnityROM Conversion to your build you will need the additional cherrypick commands before building but after RepoSync.
 
 THAT'S IT!
 
