@@ -12,6 +12,7 @@
   <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" />
   <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" />
   <remove-project name="CyanogenMod/android_bionic" />
+  <project name="CyanogenMod/android_packages_apps_Gello" path="packages_apps_Gello" remote="gh" revision="cm-12.1" />
   <project name="LiquidSmokeX64/android_bionic" path="bionic" remote="gh" revision="optimized-lollipop5.1" />
   <project name="UBERTC/arm-eabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" remote="bb" revision="master" />
   <project name="UBERTC/arm-linux-androideabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" remote="bb" revision="master" />
