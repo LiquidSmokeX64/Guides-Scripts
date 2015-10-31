@@ -13,8 +13,8 @@
   <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" />
   <remove-project name="CyanogenMod/android_bionic" />
   <remove-project name="CyanogenMod/android_system_core" />
-  <project name="ResurectionRemix/android_system_core" path="system/core" remote="gh" revision="optimized" />
-  <project name="ResurectionRemix/android_bionic" path="bionic" remote="gh" revision="optimized-lollipop5.1" />
+  <project name="ResurrectionRemix/android_system_core" path="system/core" remote="gh" revision="optimized" />
+  <project name="ResurrectionRemix/android_bionic" path="bionic" remote="gh" revision="optimized-lollipop5.1" />
   <project name="UBERTC/arm-eabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" remote="bb" revision="master" />
   <project name="UBERTC/arm-linux-androideabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" remote="bb" revision="master" />
   <project name="UBERTC/arm-eabi-4.9" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9" remote="bb" revision="master" />
