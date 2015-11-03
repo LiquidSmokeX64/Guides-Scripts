@@ -22,9 +22,29 @@ cd ~/android/system/build/ && git fetch https://github.com/LiquidSmokeX64/androi
 
 TESTING...
 
+cd ~/android/system/kernel/oneplus/msm8974 && git fetch https://github.com/LiquidSmokeX64/android_kernel_oneplus_msm8974 stable/cm-12.1-YOG7D && git cherry-pick 57961bf774ded6011c5b9969c680c09c1d4dda10
+
+cd ~/android/system/kernel/oneplus/msm8974 && git fetch https://github.com/ResurrectionRemix-Devices/android_kernel_oneplus_msm8974 cm-13-rr-official && git cherry-pick c84fabfd2cbd2196d01578bf2721ce7e816f382a
+
 cd ~/android/system/build/ && git fetch https://github.com/LiquidSmokeX64/android_build cm-12.1 && git cherry-pick caaf08a22765f548313078228f63c3c300c4d00f 
 
+Linux Kernel Updates and fixes...
 
+** cd ~/android/system/kernel/oneplus/msm8974 && git fetch https://github.com/ResurrectionRemix-Devices/android_kernel_oneplus_msm8974 cm-13-rr-official && git cherry-pick 2309ed0779f233552408dfd713672e839e9321d4
+
+cd ~/android/system/kernel/oneplus/msm8974 && git fetch https://github.com/ResurrectionRemix-Devices/android_kernel_oneplus_msm8974 cm-13-rr-official && git cherry-pick 22a9298068b8e10ccae62ea442bc9da8e7484faa
+
+cd ~/android/system/kernel/oneplus/msm8974 && git fetch https://github.com/ResurrectionRemix-Devices/android_kernel_oneplus_msm8974 cm-13-rr-official && git cherry-pick a394025b8322b1371ff5902497985e841b279a19
+
+cd ~/android/system/kernel/oneplus/msm8974 && git fetch https://github.com/ResurrectionRemix-Devices/android_kernel_oneplus_msm8974 cm-13-rr-official && git cherry-pick c90e9a39bc270ebd07d0b3485c26444d3f131262
+
+cd ~/android/system/kernel/oneplus/msm8974 && git fetch https://github.com/ResurrectionRemix-Devices/android_kernel_oneplus_msm8974 cm-13-rr-official && git cherry-pick 42181628a0f840dc643ba07172bfff86fa858fdf
+
+cd ~/android/system/kernel/oneplus/msm8974 && git fetch https://github.com/ResurrectionRemix-Devices/android_kernel_oneplus_msm8974 cm-13-rr-official && git cherry-pick a4cc32760d47d59c26665d2ce16a9f27247054fd
+
+cd ~/android/system/kernel/oneplus/msm8974 && git fetch https://github.com/ResurrectionRemix-Devices/android_kernel_oneplus_msm8974 cm-13-rr-official && git cherry-pick b30c35384ee729ac69197e22c86f8fa95c73e923
+
+cd ~/android/system/kernel/oneplus/msm8974 && git fetch https://github.com/ResurrectionRemix-Devices/android_kernel_oneplus_msm8974 cm-13-rr-official && git cherry-pick 11a281d29315ee56af113e470e4b9550ed3d3b3b
 
 Extract device files (possibly unneeded)
 Enable Root & ADB on the device (Developer Options)
