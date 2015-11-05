@@ -19,7 +19,9 @@ End System Changes...
 
 URKernel-3.2 Maker...
 
-cd ~/android/system/kernel/oneplus/msm8974 && git fetch https://github.com/LiquidSmokeX64/android_kernel_oneplus_msm8974 cm-12.1 && git cherry-pick 175c9bd634b4946e1dfe4c3f3a9a3ca9b2af3c95 && cd ~/android/system/kernel/oneplus/msm8974 && git fetch https://github.com/LiquidSmokeX64/android_kernel_oneplus_msm8974 cm-12.1 && git cherry-pick e22cb029909c5fa3c67b26fa7d35fa020983fdff
+cd ~/android/system/kernel/oneplus/msm8974 && git fetch https://github.com/LiquidSmokeX64/android_kernel_oneplus_msm8974 cm-12.1 && git cherry-pick 175c9bd634b4946e1dfe4c3f3a9a3ca9b2af3c95 && cd ~/android/system/kernel/oneplus/msm8974 && git fetch https://github.com/LiquidSmokeX64/android_kernel_oneplus_msm8974 cm-12.1 && git cherry-pick e22cb029909c5fa3c67b26fa7d35fa020983fdff && cd ~/android/system/device/oneplus/bacon && git fetch https://github.com/LiquidSmokeX64/android_device_oneplus_bacon stable/cm-12.1-YOG7D && git cherry-pick 56d06d74bde004213c19151db34e822f7c71c429
+
+
 
 End Kernel Changes...
 
