@@ -27,11 +27,9 @@ cd ~/android/system/device/oneplus/bacon && git fetch https://github.com/LiquidS
 
 End Odexing...
 
-cd ~/android/system/kernel/oneplus/msm8974/ && git fetch https://github.com/ResurrectionRemix-Devices/android_kernel_oneplus_msm8974 cm-13-rr-official && git cherry-pick cd7d21bdfe107868a5a5855713e57c911378b2bd
-
 URKernel-3.2 Commits..
 
-(Coming soon.. Trying to get it to sync everything up lol)
+cd ~/android/system/kernel/oneplus/msm8974/ && git fetch https://github.com/ResurrectionRemix-Devices/android_kernel_oneplus_msm8974 cm-13-rr-official && git cherry-pick cd7d21bdfe107868a5a5855713e57c911378b2bd
 
 Build ROM NOW
 
