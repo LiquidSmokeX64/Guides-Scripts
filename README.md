@@ -9,7 +9,7 @@ Setup Build Environment
 
 sudo apt-get install bison build-essential curl flex git gnupg gperf libesd0-dev liblz4-tool libncurses5-dev libsdl1.2-dev libwxgtk2.8-dev libxml2 libxml2-utils lzop openjdk-7-jdk openjdk-7-jre pngcrush schedtool squashfs-tools xsltproc zip zlib1g-dev g++-multilib gcc-multilib lib32ncurses5-dev lib32readline-gplv2-dev lib32z1-dev bison g++-multilib git gperf libxml2-utils make python-networkx zlib1g-dev:i386 zip vlc android-tools-adb android-tools-fastboot && sudo add-apt-repository ppa:webupd8team/java && sudo apt-get update && sudo apt-get install oracle-java7-installer && sudo update-java-alternatives -s java-7-oracle && sudo apt-get install oracle-java7-set-default && cd && mkdir ~/bin && PATH=~/bin:$PATH && mkdir -p ~/android/system && curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo && chmod a+x ~/bin/repo && 
 
-git config --global user.email "your@email.com" && git config --global user.name "You" && cd ~/android/system && repo init -u git://github.com/CyanogenMod/android.git -b cm-12.1 && mkdir -p ~/android/system/.repo/local_manifests && curl -L -o .repo/local_manifests/roomservice.xml -O -L https://raw.github.com/LiquidSmokeX64/Guides-Scripts/master/roomservice.xml && 
+git config --global user.email "your@email.com" && git config --global user.name "You" && cd ~/android/system && repo init -u git://github.com/CyanogenMod/android.git -b stable/cm-12.1-YOG7D && mkdir -p ~/android/system/.repo/local_manifests && curl -L -o .repo/local_manifests/roomservice.xml -O -L https://raw.github.com/LiquidSmokeX64/Guides-Scripts/master/roomservice.xml && 
 
 cd ~/android/system && repo sync && 
 
