@@ -2,13 +2,13 @@
 <manifest>
   <remote fetch="https://bitbucket.org/" name="bb" />
   <remote fetch="https://github.com/" name="gh" />
-  <project name="CyanogenMod/android_device_oneplus_bacon" path="device/oneplus/bacon" revision="stable/cm-12.1-YOG7D" />
-  <project name="CyanogenMod/android_device_qcom_common" path="device/qcom/common" remote="gh" revision="stable/cm-12.1-YOG7D" />
-  <project name="CyanogenMod/android_device_oppo_msm8974-common" path="device/oppo/msm8974-common" remote="gh" revision="stable/cm-12.1-YOG7D" />
+  <project name="CyanogenMod/android_device_oneplus_bacon" path="device/oneplus/bacon" revision="cm-12.1" />
+  <project name="CyanogenMod/android_device_qcom_common" path="device/qcom/common" remote="gh" revision="cm-12.1" />
+  <project name="CyanogenMod/android_device_oppo_msm8974-common" path="device/oppo/msm8974-common" remote="gh" revision="cm-12.1" />
   <project name="LiquidSmokeX64/android_device_oppo_common" path="device/oppo/common" remote="gh" revision="cm-12.1" />
-  <project name="TheMuppets/proprietary_vendor_oppo" path="vendor/oppo" remote="gh" revision="stable/cm-12.1-YOG7D" />
-  <project name="TheMuppets/proprietary_vendor_oneplus" path="vendor/oneplus" remote="gh" revision="stable/cm-12.1-YOG7D" />
-  <project name="CyanogenMod/android_kernel_oneplus_msm8974" path="kernel/oneplus/msm8974" remote="gh" revision="stable/cm-12.1-YOG7D" />
+  <project name="TheMuppets/proprietary_vendor_oppo" path="vendor/oppo" remote="gh" revision="cm-12.1" />
+  <project name="TheMuppets/proprietary_vendor_oneplus" path="vendor/oneplus" remote="gh" revision="cm-12.1" />
+  <project name="CyanogenMod/android_kernel_oneplus_msm8974" path="kernel/oneplus/msm8974" remote="gh" revision="cm-12.1" />
   <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" />
   <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" />
   <project name="UBERTC/arm-eabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" remote="bb" revision="master" />
