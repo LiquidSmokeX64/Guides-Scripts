@@ -31,6 +31,11 @@ URKernel-3.2 Commits..
 
 cd ~/android/system/kernel/oneplus/msm8974/ && git fetch https://github.com/ResurrectionRemix-Devices/android_kernel_oneplus_msm8974 cm-13-rr-official && git cherry-pick cd7d21bdfe107868a5a5855713e57c911378b2bd
 
+UR4...
+
+cd ~/android/system/frameworks/base && git fetch https://github.com/CyanogenMod/android_frameworks_base cm-13.0 && git cherry-pick b126e7559cb6575715002dc721d62c4e201f073a
+
+
 Build ROM NOW
 
 cd ~/android/system && source build/envsetup.sh && breakfast bacon && croot && brunch bacon
