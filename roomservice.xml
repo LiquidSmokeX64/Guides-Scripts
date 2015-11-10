@@ -8,7 +8,7 @@
   <project name="LiquidSmokeX64/android_device_oppo_common" path="device/oppo/common" remote="gh" revision="cm-12.1" />
   <project name="TheMuppets/proprietary_vendor_oppo" path="vendor/oppo" remote="gh" revision="cm-12.1" />
   <project name="TheMuppets/proprietary_vendor_oneplus" path="vendor/oneplus" remote="gh" revision="cm-12.1" />
-  <project name="LiquidSmokeX64/URKernel" path="kernel/oneplus/msm8974" remote="gh" revision="master" />
+  <project name="LiquidSmokeX64/URK-2" path="kernel/oneplus/msm8974" remote="gh" revision="master" />
   <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" />
   <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" />
   <project name="UBERTC/arm-eabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" remote="bb" revision="master" />
