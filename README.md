@@ -11,7 +11,7 @@ sudo apt-get install bison build-essential curl flex git gnupg gperf libesd0-dev
 
 Setup CM Branch & get the roomservice.xml
 
-git config --global user.email "your@email.com" && git config --global user.name "YourName" && cd ~/android/system && repo init -u git://github.com/CyanogenMod/android.git -b cm-12.1 && mkdir -p ~/android/system/.repo/local_manifests && curl -L -o .repo/local_manifests/roomservice.xml -O -L https://raw.github.com/LiquidSmokeX64/Guides-Scripts/master/roomservice.xml && cd ~/android/system
+git config --global user.email "your@email.com" && git config --global user.name "YourName" && cd ~/android/system && repo init -u git://github.com/CyanogenMod/android.git -b stable/cm-12.1-YOG7D && mkdir -p ~/android/system/.repo/local_manifests && curl -L -o .repo/local_manifests/roomservice.xml -O -L https://raw.github.com/LiquidSmokeX64/Guides-Scripts/master/roomservice.xml && cd ~/android/system
 
 Sync up the CM Repo
 
