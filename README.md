@@ -47,6 +47,7 @@ cd ~/android/UR4/frameworks/base && git fetch https://github.com/sultanxda/andro
 Build ROM and/or Kernel NOW
 
 cd ~/android/UR4 && make clean && export USE_CCACHE=1 && source build/envsetup.sh && breakfast bacon && croot && make bootimage
+
 cd ~/android/UR4 && make clean && export USE_CCACHE=1 && source build/envsetup.sh && breakfast bacon && croot && brunch bacon
 
 ENJOY.
