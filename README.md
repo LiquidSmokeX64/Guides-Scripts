@@ -1,7 +1,7 @@
 Read Me First
 ==============
 
-How to build UnityROM-4.6 (AOSP Edition) for OnePlus One
+How to build UnityROM-4.8.0 (AOSP Edition) for OnePlus One
 
 Install your Linux Distro
 
@@ -45,7 +45,9 @@ cd ~/android/UR4/vendor/cm && git fetch https://github.com/LiquidSmokeX64/androi
 cd ~/android/UR4/frameworks/base && git fetch https://github.com/sultanxda/android_frameworks_base cm-12.1 && git cherry-pick 0cbd4a88767d78640b7dd391674575f7d5e517e6
 cd ~/android/UR4/kernel/oneplus/msm8974 && git fetch https://github.com/LiquidSmokeX64/android_kernel_oneplus_msm8974 cm-13.0 && git cherry-pick 9f638daeea52ef00b92723559304a4735bd70aec
 cd ~/android/UR4/vendor/cm && git fetch https://github.com/LiquidSmokeX64/android_vendor_cm cm-13.0 && git cherry-pick 06cfb38be1dbcd89bb66b2cfc9c21ba082d88af8
-cd ~/android/UR4 && make clean && export USE_CCACHE=1 && source build/envsetup.sh && breakfast bacon && croot && brunch bacon
+cd ~/android/UR4/kernel/oneplus/msm8974 && git fetch https://github.com/LiquidSmokeX64/android_kernel_oneplus_msm8974 cm-13.0 && git cherry-pick aa3ce069f3856bade9eea864c7b6678f8a47fd45
+cd ~/android/UR4/vendor/cm && git fetch https://github.com/LiquidSmokeX64/android_vendor_cm cm-13.0 && git cherry-pick 31b7c97d6369a4d8ed183cbc9c809cf86edc310e
+cd ~/android/UR4/build/ && git fetch https://github.com/LiquidSmokeX64/android_build cm-13.0 && git cherry-pick e5df7142c557b496ab53ef76619c7311908bb46d
 
 Build ROM and/or Kernel NOW
 
