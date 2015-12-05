@@ -35,13 +35,16 @@ cd ~/android/UR4/packages/apps/CMUpdater && git fetch https://github.com/LiquidS
 cd ~/android/UR4/packages/apps/CMUpdater && git fetch https://github.com/LiquidSmokeX64/android_packages_apps_CMUpdater cm-13.0 && git cherry-pick 1ace6d6085b245b25b73bc7bf291cf49f02f96c6
 cd ~/android/UR4/packages/apps/CMUpdater && git fetch https://github.com/LiquidSmokeX64/android_packages_apps_CMUpdater cm-13.0 && git cherry-pick e3f8a17e444980ede793752c6039544197c1b50c
 cd ~/android/UR4/kernel/oneplus/msm8974 && git fetch https://github.com/LiquidSmokeX64/android_kernel_oneplus_msm8974 cm-13.0 && git cherry-pick 68ab83afd0490706f6610d7d5e0a88824be34bd4
+cd ~/android/UR4/kernel/oneplus/msm8974 && git fetch https://github.com/LiquidSmokeX64/android_kernel_oneplus_msm8974 cm-13.0 && git cherry-pick c034680d0902c8030115724effd8d842111b2e4c
 cd ~/android/UR4/device/oneplus/bacon && git fetch https://github.com/LiquidSmokeX64/android_device_oneplus_bacon cm-13.0 && git cherry-pick 1cf44922bf3c54d379943286f92c56f4682681c2
 cd ~/android/UR4/device/oneplus/bacon && git fetch https://github.com/LiquidSmokeX64/android_device_oneplus_bacon cm-13.0 && git cherry-pick 65eb004824d9884677097e84fdc0d7db75575b47
 cd ~/android/UR4/vendor/cm && git fetch https://github.com/LiquidSmokeX64/android_vendor_cm cm-13.0 && git cherry-pick c016b950fe3e180b3e740b21ba278ce489e8b74e
 cd ~/android/UR4/vendor/cm && git fetch https://github.com/LiquidSmokeX64/android_vendor_cm cm-13.0 && git cherry-pick 03c11bac3d9181fd63b10e1f42f3da3bfa5ab414
+cd ~/android/UR4/vendor/cm && git fetch https://github.com/LiquidSmokeX64/android_vendor_cm cm-13.0 && git cherry-pick b32d4731a5413432efae65db37b9327bd7eb3eaa
 cd ~/android/UR4/frameworks/base && git fetch https://github.com/sultanxda/android_frameworks_base cm-12.1 && git cherry-pick 0cbd4a88767d78640b7dd391674575f7d5e517e6
+cd ~/android/UR4/kernel/oneplus/msm8974 && git fetch https://github.com/LiquidSmokeX64/android_kernel_oneplus_msm8974 cm-13.0 && git cherry-pick 9f638daeea52ef00b92723559304a4735bd70aec
+cd ~/android/UR4/vendor/cm && git fetch https://github.com/LiquidSmokeX64/android_vendor_cm cm-13.0 && git cherry-pick 06cfb38be1dbcd89bb66b2cfc9c21ba082d88af8
 cd ~/android/UR4 && make clean && export USE_CCACHE=1 && source build/envsetup.sh && breakfast bacon && croot && brunch bacon
-cd ~/android/UR4
 
 Build ROM and/or Kernel NOW
 
