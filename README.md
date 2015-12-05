@@ -1,7 +1,7 @@
 Read Me First
 ==============
 
-How to build UnityROM-4.4 (AOSP Edition) for OnePlus One
+How to build UnityROM-4.6 (AOSP Edition) for OnePlus One
 
 Install your Linux Distro
 
