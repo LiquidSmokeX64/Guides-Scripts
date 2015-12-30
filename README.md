@@ -1,7 +1,7 @@
 Read Me First
 ==============
 
-How to build UnityROM-4.10 (Pure Edition) for OnePlus One
+How to build UnityROM-4.12 (Pure Edition) for OnePlus One
 
 Install your Linux Distro
 
