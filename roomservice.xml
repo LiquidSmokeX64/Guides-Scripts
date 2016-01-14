@@ -8,10 +8,8 @@
   <project name="TheMuppets/proprietary_vendor_oppo" path="vendor/oppo" remote="github" />
   <project name="TheMuppets/proprietary_vendor_oneplus" path="vendor/oneplus" remote="github" />
   <project name="CyanogenMod/android_kernel_oneplus_msm8974" path="kernel/oneplus/msm8974" remote="github" />
-  <project name="CyanogenMod/android_vendor_qcom_opensource_dataservices" path="vendor/qcom/opensource/dataservices" remote="github" />
   <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" />
   <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" />
-  <project name="UBERTC/arm-eabi-6.0" path="prebuilts/gcc/linux-x86/arm/arm-eabi-6.0" remote="bb" revision="master" />
-  <project name="UBERTC/arm-eabi-5.2" path="prebuilts/gcc/linux-x86/arm/arm-eabi-5.2" remote="bb" revision="master" />
-  <project name="UBERTC/arm-linux-androideabi-5.2" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-5.2" remote="bb" revision="master" />
+  <project name="UBERTC/arm-eabi-5.3" path="prebuilts/gcc/linux-x86/arm/arm-eabi-5.3" remote="bb" revision="master" />
+  <project name="UBERTC/arm-linux-androideabi-5.3" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-5.3" remote="bb" revision="master" />
 </manifest>
