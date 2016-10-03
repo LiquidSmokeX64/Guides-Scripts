@@ -1,5 +1,5 @@
 
-How to build UnityROM-5.0.0 (Pure Edition) for OnePlus 3
+How to build Project X - ROM (Alpha) for OnePlus 3
 
 Install your Linux Distro (Ubuntu 16 LTS x64 for me)
 
@@ -9,29 +9,56 @@ sudo apt-get install git-core gnupg flex bison gperf build-essential zip curl zl
 
 sudo ln -s /usr/include/asm-generic /usr/include/asm;
 
-cd && mkdir ~/bin && PATH=~/bin:$PATH && mkdir -p ~/android/UR5 
+cd && mkdir ~/bin && PATH=~/bin:$PATH 
+
+mkdir -p ~/android/UR5 
+
+|** Install Repo
 
 curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo && chmod a+x ~/bin/repo 
 
 cd ~/android/UR5
 
-Setup CM Branch & get the roomservice.xml
+|** Setup Git
 
-Sync up the Repo
+git config --global user.email "your@email.com" && git config --global user.name "YourName"
 
-git config --global user.email "liquidsmokex64@gmail.com" && git config --global user.name "LiquidSmokeX64" && cd ~/android/UR5 && repo init -u git://github.com/CyanogenMod/android.git -b cm-14.0 && cd ~/android/UR5
+cd ~/android/UR5 
 
-mkdir -p ~/android/UR5/.repo/local_manifests && curl -L -o .repo/local_manifests/roomservice.xml -O -L https://raw.github.com/LiquidSmokeX64/Guides-Scripts/master/roomservice.xml && cd ~/android/UR5
+|** Initialize the Repo
 
+repo init -u git://github.com/CyanogenMod/android.git -b cm-14.0 
+
+cd ~/android/UR5
+
+|** Get the roomservice.xml
+
+mkdir -p ~/android/UR5/.repo/local_manifests && curl -L -o .repo/local_manifests/roomservice.xml -O -L https://raw.github.com/LiquidSmokeX64/Guides-Scripts/master/roomservice.xml 
+
+cd ~/android/UR5
+
+|** Sync the Repo
 
 repo sync --force-sync
 
+|** SETUP CCACHE (if used)
+
 prebuilts/misc/linux-x86/ccache/ccache -M 50G
 
-Build ROM and/or Kernel NOW
+|** Build Images
 
 cd ~/android/UR5 && make clean && make clobber && source build/envsetup.sh && breakfast oneplus3 && croot && make bootimage
 
+cd ~/android/UR5 && make clean && make clobber && source build/envsetup.sh && breakfast oneplus3 && croot && make systemimage
+
+cd ~/android/UR5 && make clean && make clobber && source build/envsetup.sh && breakfast oneplus3 && croot && make userdataimage
+
+cd ~/android/UR5 && make clean && make clobber && source build/envsetup.sh && breakfast oneplus3 && croot && make cacheimage
+
+cd ~/android/UR5 && make clean && make clobber && source build/envsetup.sh && breakfast oneplus3 && croot && make recoveryimage
+
+|** Build Full-ROM.zip
+
 cd ~/android/UR5 && make clean && make clobber && source build/envsetup.sh && breakfast oneplus3 && croot &&  brunch oneplus3
 
-ENJOY.
+|** ENJOY.
