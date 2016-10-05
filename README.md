@@ -1,7 +1,6 @@
+|** How to build Project X - ROM (Pre-Alpha) for OnePlus 3
 
-|** How to build Project X - ROM (Alpha) for OnePlus 3
-
-|** Install your Linux Distro (Ubuntu 16 LTS x64 for me)
+|** Install your Linux Distro (Ubuntu 16.04.1 LTS x64 for me)
 
 |** Setup Build Environment
 
@@ -41,24 +40,26 @@ cd ~/android/UR5
 
 repo sync --force-sync
 
-|** SETUP CCACHE (if used)
+|** Setup Jack Server (if needed)
 
-prebuilts/misc/linux-x86/ccache/ccache -M 50G
+export JACK_SERVER_VM_ARGUMENTS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx7896m"
+out/host/linux-x86/bin/jack-admin kill-server
+out/host/linux-x86/bin/jack-admin start-server
 
 |** Build Images
 
-cd ~/android/UR5 && make clean && make clobber && source build/envsetup.sh && breakfast oneplus3 && croot && make bootimage
+cd ~/android/UR5 && make clean && make clobber && source build/envsetup.sh && breakfast oneplus3 && export USE_CCACHE=1 && prebuilts/misc/linux-x86/ccache/ccache -M 50G && croot && make bootimage
 
-cd ~/android/UR5 && make clean && make clobber && source build/envsetup.sh && breakfast oneplus3 && croot && make systemimage
+cd ~/android/UR5 && make clean && make clobber && source build/envsetup.sh && breakfast oneplus3 && export USE_CCACHE=1 && prebuilts/misc/linux-x86/ccache/ccache -M 50G && croot && make systemimage
 
-cd ~/android/UR5 && make clean && make clobber && source build/envsetup.sh && breakfast oneplus3 && croot && make userdataimage
+cd ~/android/UR5 && make clean && make clobber && source build/envsetup.sh && breakfast oneplus3 && export USE_CCACHE=1 && prebuilts/misc/linux-x86/ccache/ccache -M 50G && croot && make userdataimage
 
-cd ~/android/UR5 && make clean && make clobber && source build/envsetup.sh && breakfast oneplus3 && croot && make cacheimage
+cd ~/android/UR5 && make clean && make clobber && source build/envsetup.sh && breakfast oneplus3 && export USE_CCACHE=1 && prebuilts/misc/linux-x86/ccache/ccache -M 50G && croot && make cacheimage
 
-cd ~/android/UR5 && make clean && make clobber && source build/envsetup.sh && breakfast oneplus3 && croot && make recoveryimage
+cd ~/android/UR5 && make clean && make clobber && source build/envsetup.sh && breakfast oneplus3 && export USE_CCACHE=1 && prebuilts/misc/linux-x86/ccache/ccache -M 50G && croot && make recoveryimage
 
 |** Build Full-ROM.zip
 
-cd ~/android/UR5 && make clean && make clobber && source build/envsetup.sh && breakfast oneplus3 && croot &&  brunch oneplus3
+cd ~/android/UR5 && make clean && make clobber && source build/envsetup.sh && breakfast oneplus3 && export USE_CCACHE=1 && prebuilts/misc/linux-x86/ccache/ccache -M 50G && croot && brunch oneplus3
 
 |** ENJOY.
