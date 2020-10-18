@@ -1,4 +1,3 @@
-===========================================================
 How to fix Fallout 76 on Linux post Update 23.
 
 Prerequisites: Linux OS that can run Steam, Wine, Winetricks, Steam, Proton 5.13+, Protontricks, and a PC capable of running FO76 with a bit of overhead to the system resources.
@@ -30,5 +29,5 @@ Exit the Terminal, then right-click on Falout 76, select Properties, then add th
 Run the game again and Enjoy.
 (yes the Atom Shop says everything is free but its lying lol, its not game breaking.)
 
-============================================================
+I tested it, it works fine.
 
