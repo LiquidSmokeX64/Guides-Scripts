@@ -1,65 +1,34 @@
-|** How to build Project X - ROM (Pre-Alpha) for OnePlus 3
+===========================================================
+How to fix Fallout 76 on Linux post Update 23.
 
-|** Install your Linux Distro (Ubuntu 16.04.1 LTS x64 for me)
+Prerequisites: Linux OS that can run Steam, Wine, Winetricks, Steam, Proton 5.13+, Protontricks, and a PC capable of running FO76 with a bit of overhead to the system resources.
 
-|** Setup Build Environment
+Arch Linux, Manjaro: sudo pacman -S python-pip python-pipx python-setuptools python-virtualenv wine winetricks steam
+Ubuntu Distros / Mint /deboan based distros: sudo apt install python3-pip python3-setuptools python3-venv pipx steam wine-stable
+Fedora: sudo dnf install python3-pip python3-setuptools python3-libs pipx steam wine-stable winetricks
 
-sudo apt-get install git-core gnupg flex bison gperf build-essential zip curl zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386 lib32ncurses5-dev x11proto-core-dev libx11-dev ccache libgl1-mesa-dev libxml2-utils xsltproc unzip android-tools-adb android-tools-fastboot curl flex git gnupg gperf libesd0-dev liblz4-tool libncurses5-dev libsdl1.2-dev libxml2 libxml2-utils lzop openjdk-8-jdk openjdk-8-jre pngcrush schedtool squashfs-tools xsltproc zip zlib1g-dev flex bison texinfo gcc gperf patch libtool automake g++ libncurses5-dev gawk subversion expat libexpat1-dev python-all-dev libgcc1:i386 bc libcloog-isl-dev libcap-dev autoconf libgmp-dev gcc-multilib g++-multilib pkg-config libmpc-dev libmpfr-dev phablet-tools lib32readline6-dev libwxgtk3.0-dev maven
+Run these afterwards: 
+1. python3 -m pip install --user pipx
+2. ~/.local/bin/pipx ensurepath
+3. Close and reopen the terminal.
+4. pipx install protontricks
 
-sudo ln -s /usr/include/asm-generic /usr/include/asm;
+Open Steam.
+Right-Click on Fallout 76 on the left panel and open Properties.
+At the bottom, check the box to Force the use of a Steam Play Compatibility Tool.
+Use the droplist to select Proton 5.13+, and close the window.
+Install fallout 76 on your Steam Account with Proton 5.13+ enabled.
+Run Fallout 76 once knowing it will fail, and exit if it does not on its own.
 
-cd && mkdir ~/bin && PATH=~/bin:$PATH 
+Download the supplied dbghelp.dll from here. I pulled it from Windows10 Pro x64 Update 2004 myself.
+Put the dbghelp.dll in the game dir so it's easy for wine to locate automatically.
+Open a terminal type this in : protontricks 1151340 --gui
+Select the default prefix, select winecfg, go to Libraries and add dbghelp to the list.
+Then type protontricks 1151340 -q d3dx9 vcrun2015 faudio. This will take a minute, just wait it out.
+Exit the Terminal, then right-click on Falout 76, select Properties, then add this: WINEDLLOVERRIDES=winedbg.exe=d %command% to your Launch Options.
 
-mkdir -p ~/android/UR5 
+Run the game again and Enjoy.
+(yes the Atom Shop says everything is free but its lying lol, its not game breaking.)
 
-|** Install Repo
+============================================================
 
-curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo && chmod a+x ~/bin/repo 
-
-cd ~/android/UR5
-
-|** Setup Git
-
-git config --global user.email "your@email.com" && git config --global user.name "YourName"
-
-cd ~/android/UR5 
-
-|** Initialize the Repo
-
-repo init -u git://github.com/CyanogenMod/android.git -b cm-14.0 
-
-cd ~/android/UR5
-
-|** Get the roomservice.xml
-
-mkdir -p ~/android/UR5/.repo/local_manifests && curl -L -o .repo/local_manifests/roomservice.xml -O -L https://raw.github.com/LiquidSmokeX64/Guides-Scripts/master/roomservice.xml 
-
-cd ~/android/UR5
-
-|** Sync the Repo
-
-repo sync --force-sync
-
-|** Setup Jack Server (if needed)
-
-export JACK_SERVER_VM_ARGUMENTS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx7896m"
-out/host/linux-x86/bin/jack-admin kill-server
-out/host/linux-x86/bin/jack-admin start-server
-
-|** Build Images
-
-cd ~/android/UR5 && make clean && make clobber && source build/envsetup.sh && breakfast oneplus3 && export USE_CCACHE=1 && prebuilts/misc/linux-x86/ccache/ccache -M 50G && croot && make bootimage
-
-cd ~/android/UR5 && make clean && make clobber && source build/envsetup.sh && breakfast oneplus3 && export USE_CCACHE=1 && prebuilts/misc/linux-x86/ccache/ccache -M 50G && croot && make systemimage
-
-cd ~/android/UR5 && make clean && make clobber && source build/envsetup.sh && breakfast oneplus3 && export USE_CCACHE=1 && prebuilts/misc/linux-x86/ccache/ccache -M 50G && croot && make userdataimage
-
-cd ~/android/UR5 && make clean && make clobber && source build/envsetup.sh && breakfast oneplus3 && export USE_CCACHE=1 && prebuilts/misc/linux-x86/ccache/ccache -M 50G && croot && make cacheimage
-
-cd ~/android/UR5 && make clean && make clobber && source build/envsetup.sh && breakfast oneplus3 && export USE_CCACHE=1 && prebuilts/misc/linux-x86/ccache/ccache -M 50G && croot && make recoveryimage
-
-|** Build Full-ROM.zip
-
-cd ~/android/UR5 && make clean && make clobber && source build/envsetup.sh && breakfast oneplus3 && export USE_CCACHE=1 && prebuilts/misc/linux-x86/ccache/ccache -M 50G && croot && brunch oneplus3
-
-|** ENJOY.
