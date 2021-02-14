@@ -24,18 +24,17 @@ Use the droplist to select Proton 5.0, and close the window.
 Install fallout 76 on your Steam Account with Proton 5.0 enabled.
 Run Fallout 76 once knowing it will fail, and exit if it does not on its own.
 
-Download the supplied .dll/s from here. I pulled from Windows10 Pro x64 Update 2004 myself.
-Put the files in the game dir so it's easy for wine to locate automatically.
-
 Type protontricks 1151340 -q d3dx9 vcrun2015 faudio in a Terminal.
 
-Open Properties again, and switch to Proton 5.13+.
+Open Properties again, and switch to Proton 5.13+ (OR Proton GE now).
+
+Download the supplied .dll/s from here. I pulled from Windows10 Pro x64 Update 2004 myself.
+Put the files in the game dir so it's easy for the game to locate them automatically.
 
 Open a terminal again type this in : protontricks 1151340 --gui
 
-Select the default prefix, select winecfg, go to Libraries and add dbghelp to the list, the other 2 should be there already.
-Then . This will take a minute, just wait it out.
-Exit the Terminal, then right-click on Falout 76, select Properties, then add this: 
+Select the default prefix, select winecfg, go to Libraries and add "dbghelp" to the list, the other 2 should be there already.
+Close the Wine GUI, and exit the Terminal, then right-click on Falout 76, select Properties, then add this: 
 
 WINEDLLOVERRIDES=winedbg.exe=d %command% to your Launch Options.
 
