@@ -26,12 +26,18 @@ Run Fallout 76 once knowing it will fail, and exit if it does not on its own.
 
 Download the supplied .dll/s from here. I pulled from Windows10 Pro x64 Update 2004 myself.
 Put the files in the game dir so it's easy for wine to locate automatically.
+
 Type protontricks 1151340 -q d3dx9 vcrun2015 faudio in a Terminal.
+
 Open Properties again, and switch to Proton 5.13+.
+
 Open a terminal again type this in : protontricks 1151340 --gui
+
 Select the default prefix, select winecfg, go to Libraries and add dbghelp to the list, the other 2 should be there already.
 Then . This will take a minute, just wait it out.
-Exit the Terminal, then right-click on Falout 76, select Properties, then add this: WINEDLLOVERRIDES=winedbg.exe=d %command% to your Launch Options.
+Exit the Terminal, then right-click on Falout 76, select Properties, then add this: 
+
+WINEDLLOVERRIDES=winedbg.exe=d %command% to your Launch Options.
 
 Run the game again and Enjoy.
 
