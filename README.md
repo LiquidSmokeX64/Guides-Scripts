@@ -3,6 +3,8 @@ How to fix Fallout 76 on Linux post Update 23.
 
 Prerequisites: Linux OS that can run Steam, Wine, Winetricks, Steam, Proton 5.0, Proton 5.13+, Protontricks, and a PC capable of running FO76 with a bit of overhead to the system resources.
 
+DO NOT USE PROTON GE WITH THIS GUIDE, IT WILL FAIL.
+
 Arch Linux, Manjaro: sudo pacman -S python-pip python-pipx python-setuptools python-virtualenv wine winetricks steam
 
 Ubuntu Distros / Mint /deboan based distros: sudo apt install python3-pip python3-setuptools python3-venv pipx steam wine-stable
