@@ -1,3 +1,6 @@
+## My easy to follow guides to get Fedora 34 (gnome) ready for gaming in no time. ##
+
+##How to install Nvidia Drivers from the packages on the Drivers website. ##
 ## First things first.. ##
 Open a Terminal.
 ## Raise your security access to root level. ##
@@ -60,7 +63,5 @@ Step 7: Open Steam and on any Windows games you would like to play right click o
 
 Step 8: Enjoy your games. If any problems arise, protondb.com is an excellent source to sort out what you need to do to get your game running.
 ## End tutorial ##
-
-How to install Nvidia Drivers from the packages on the Drivers website.
 
 
