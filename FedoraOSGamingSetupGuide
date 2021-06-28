@@ -1,42 +1,79 @@
 ## My easy to follow guides to get Fedora 34 (gnome) ready for gaming in no time. ##
 
 ##How to install Nvidia Drivers from the packages on the Drivers website. ##
+
 ## First things first.. ##
+
 Open a Terminal.
+
 ## Raise your security access to root level. ##
+
 sudo -i (enter your password)
+
 ##Install the dependencies for manual Nvidia driver intallation to be done. ##
+
 dnf install kernel-devel kernel-headers gcc make dkms acpid libglvnd-glx libglvnd-opengl libglvnd-devel pkgconfig
+
 ## Download the correct Linux-x64 driver package from the Nvidia Drivers page.
+
 ## Navigate to the downloaded package ##
+
 cd ~/Downloads
+
 ## Make the package able to be ran as an executable. ##
+
 chmod +x NVIDIA-Linux-*.run (*= you will have to type the driver version number here)
+
 ##Blacklist the default display driver.. ##
+
 echo "blacklist nouveau" >> /etc/modprobe.d/blacklist.conf
+
 ##Add some kernel flags like so.. ##
+
 sudo gedit /etc/sysconfig/grub
+
 ##Add this to the line with "quiet splash" ##
+
 rd.driver.blacklist=nouveau
+
 ## Update Grub to reflect the changes next reboot ##
+
 grub2-mkconfig -o /boot/grub2/grub.cfg
-## Remove the default display draiver entirely.. ##
+
+## Remove the default display driver entirely.. ##
+
 dnf remove xorg-x11-drv-nouveau
+
 ## Backup the default initramfs and generate a new one without the default display driver ##
+
 mv /boot/initramfs-$(uname -r).img /boot/initramfs-$(uname -r)-nouveau.img
 dracut /boot/initramfs-$(uname -r).img $(uname -r)
-## Set the system to reboot into terminal mode (find a way to continue this guide on a different device than the one being updated here)
+
+## Set the system to reboot into terminal mode ##
+(find a way to continue this guide on a different device than the one being updated here)
+ 
 systemctl set-default multi-user.target && reboot
+
 ## Login to the terminal mode like normal. ##
+
 type "sudo -i" again and login as root
+
 ## Navigate to the downloaded driver package. ##
+
 type "cd /home/[username]/Downloads and hit Enter. ([username] = your username here)
+
 ## Begin the installation of the Nvidia Driver. (say yes to everything here) ##
+
 ./NVIDIA-Linux-*.run (*= you will have to type the driver version number here)
+
 ## Set the system back to graphical mode and reboot. ##
+
 systemctl set-default graphical.target && reboot
+
 ## Install Hardward Acceleration support for Web Browsers and such. ##
+
 dnf install vdpauinfo libva-vdpau-driver libva-utils
+
 ## You're done. Everything should "just work" now."
 
 **## Guide Part 2 ##**
